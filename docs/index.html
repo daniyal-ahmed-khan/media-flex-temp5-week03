@@ -278,11 +278,15 @@
             #header-image {
                 display: none;
             }
+            #header-image > img {
+                max-width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
             @media all and (max-width: 1000px) {
                 #header-image {
                     display: block;
-                    width:40%;
-                    height: 80%;
+                    width:60%;
                 }
                 #div1 {
                     display: none;
@@ -309,7 +313,7 @@
                 <h1><b>Jane Doe</b></h1>
                 <p>Photographer and Web Designer.</p>
                 <div id="header-image">
-                    <div class="nav-image"></div>
+                    <img src="profile_girl.jpg">
                 </div>
                 <button>
                     <i class="fa fa-download"></i> Download Resume
