@@ -1,0 +1,478 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        <style>
+            * {
+                margin: 0;
+                padding:0;
+                box-sizing: border-box;
+            }
+            #div1 {
+                width:40%;
+                position: fixed;
+                height: 100%;
+            }
+            .nav-image{
+                background-image: url(profile_girl.jpg);
+                min-height: 100%; /*check by removing min-height to only height */
+                background-position:center;
+                background-size: cover;   
+            }
+            #page-content {
+                margin: 0px 0px 0px 40%;
+                padding: 12px 24px;
+            }
+            #page-content h2 {
+                font-size: 30px;
+            }
+            header h1 {
+                margin: 20px 0px;
+                font-size: 65px;
+            }  
+            header {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 128px 16px;
+            } 
+            header p {
+                margin: 17px 0px;
+                font-size: 15px;
+            }
+            header button {
+                color: black;
+                background-color:#f1f1f1;
+                border: 1px solid #f1f1f1;
+                margin: 30px auto 0px auto;
+                font-size: 15px;
+                padding: 12px 24px;
+            }
+            header button:hover {
+                background-color:darkgray;
+            }
+            #portfolio {
+                margin-left: auto;
+                margin-right: auto;
+                padding: 32px 0px;
+            }
+            h2{
+                margin: 10px 0px;
+                font-size: 30px;
+                color: #757575;
+            }
+            #photos-grid {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+            }
+            #image-row {
+                flex:1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 0px 8px;
+            }
+            #image-row img {
+                margin: 0px 0px 12px;
+            }
+            body {
+                font-family:'Montserrat', sans-serif;
+            }
+            #about p {
+                margin: 15px 0px;
+                font-size: 15px;
+                line-height: 25px;
+            }
+            #about {
+                margin: 0px auto;
+                padding: 32px 0px;
+            }
+            h3 {
+                margin: 10px 0px;
+                font-size: 24px;
+                color: #757575;
+            }
+            #bar {
+                text-align:center;
+                background-color: #616161; 
+                color:white; 
+                line-height: 30px; 
+                padding: 4px 8px;
+            }
+            #big-graph {
+                margin: 16px 0px;
+                padding: 16px 0px;
+                background-color: #616161;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #detail {
+                flex:1;
+                color: #f1f1f1;
+                margin: 15px 0px;
+                text-align: center;
+                font-size: 17px;
+            }
+            #detail span {
+                margin: 0px auto;
+                font-size: 24px;
+                font-family: 'Montserrat', sans-serif;
+            }
+            #about button {
+                color: black;
+                background-color: #f1f1f1;
+                padding: 12px 24px;
+                margin: 16px 0px;
+                border: 1px solid #f1f1f1;
+                font-size: 15px;
+                font-family: 'Montserrat', sans-serif;
+                cursor: pointer;
+            }
+            #about button:hover {
+                background-color:darkgray;
+            }
+            #about img {
+                border-radius: 50%;
+                margin-right: 16px;
+                float: left;
+                vertical-align: middle;
+            }
+            #name-info span{
+                margin-right: 16px;
+                font-size: 18px;
+                font-family: 'Montserrat', sans-serif;
+                color: black;
+            }
+            #name-info {
+                margin: 15px 0px;
+                color:#616161;
+                font-size: 15px;
+                font-family: 'Montserrat', sans-serif;
+            }
+            #prices-charts {
+                display: flex;
+                justify-content: center; 
+                flex-direction: row;
+                align-items: center;
+                padding: 0px 8px;
+            }
+            #chart {
+                flex: 1;
+                
+                margin: 16px 7px;
+                box-shadow: 0px 1px 5px #888888;
+            }
+            
+            #li1 {
+                padding:32px 16px; 
+                color:white; 
+                font-size: 24px;
+                text-align: center;
+                background-color:#616161;
+            }
+            li {
+                text-align: center;
+                border: 1px solid #f1f1f1;
+                text-decoration: none;
+                list-style: none;
+                padding: 16px;
+                font-size: 15px;
+                font-family: 'Montserrat', sans-serif;
+                color: #757575;
+            }
+            #li6 {
+                padding: 16px;
+            }
+            #li6 h2 {
+                margin: 10px 0px;
+                font-size: 30px;
+                color: #757575;
+                font-family: 'Montserrat', sans-serif;
+            }
+            #li6 span {
+                color: #757575;
+                font-size: 15px;
+                font-family: 'Montserrat', sans-serif;
+            }
+            #li7 {
+                padding: 24px 16px;
+                background-color: #f1f1f1;
+                font-size: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #li7 button {
+                border: 1px solid white;
+                color: black;
+                background-color: white;
+                padding: 12px 24px;
+                
+            }
+            #li7 button:hover {
+                background-color:darkgray;
+            }
+            #contact {
+                margin-bottom: 64px;
+            }
+            #contact-info {
+                margin-top: 16px 0px;
+            }
+            #contact-info p {
+                font-size: 15px;
+                margin: 15px 0px;
+                color: #616161;
+            }
+            #contact-info p i {
+                font-size: 35px;
+                margin-right: 16px;
+                color: #616161;
+            }
+             
+            .grayscale {
+                filter: grayscale(50%);
+            }
+            form button {
+                background-color: #f1f1f1;
+                color: black;
+                font-family: Verdana, sans-serif;
+                margin:16px 0px;
+                padding: 11px 16px;
+                border: 1px solid #f1f1f1;
+                font-size: 16px;
+            }
+            form button:hover {
+                background-color:darkgray;
+            }
+            input {
+                font-family: Verdana, sans-serif;
+                width: 100%;
+                height: 55px;
+                margin: 8px 0px;
+                font-size: 18px;
+                padding: 8px;
+                border: 1px solid silver;
+            }
+            footer {
+                padding: 64px 16px;
+                margin: 0px 0px 0px 40%;
+                text-align: center;
+                background-color: #f1f1f1;
+                
+                color: black;
+            }
+            footer a, p {
+                font-size: 17px;
+                color: #616161;
+            }
+            ion-icon {
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+            #mobileDiv {
+                display: none;
+            }
+            @media all and (max-width: 1000px) {
+               
+                
+                #page-content {
+                    margin:0;
+                }
+                body {
+                    order: 999;
+                }
+                footer {
+                    margin:0;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="div1">
+            <div class="nav-image"></div>
+        </div>
+        <div id="page-content">
+            <header>
+                <h1><b>Jane Doe</b></h1>
+                <p>Photographer and Web Designer.</p>
+                <button>
+                    <i class="fa fa-download"></i> Download Resume
+                </button>
+            </header>
+            
+            <div id="portfolio">
+                <h2>My Portfolio</h2>
+                <hr style="border: .5px solid silver; margin: 20px 0px; opacity: .4;  ">
+                <div id="photos-grid">
+                    <div id="image-row"  >
+                        <img src="wedding.jpg" style="width:100%">
+                        <img src="rocks.jpg" style="width:100%">                        
+                        <img src="sailboat.jpg" style="width:100%">
+                    </div>
+                    <div id="image-row">
+                        <img src="underwater.jpg" style="width:100%">
+                        <img src="chef.jpg" style="width:100%">
+                        <img src="wedding.jpg" style="width:100%">
+                        <img src="p6.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+
+            <div id="about">
+                <h2>About</h2>
+                <hr style="border: .5px solid silver; margin: 20px 0px; opacity: .4;  ">
+                <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <h3>My Skills</h3>
+                <p>Photograpy</p>
+
+                <div id="bar-container" style="background-color: #f1f1f1;">
+                    <div id="bar" style="width: 95%;">
+                        95%
+                    </div>
+                </div>
+                <p>Web Design</p>
+
+                <div id="bar-container" style="background-color: #f1f1f1;">
+                    <div id="bar" style="width: 85%;">
+                        85%
+                    </div>
+                </div>
+                <p>Photoshop</p>
+
+                <div id="bar-container" style="background-color: #f1f1f1;">
+                    <div id="bar" style="width: 80%;">
+                        80%
+                    </div>
+                </div>
+                <br>
+                <div id="big-graph">
+                    <div  id="detail">
+                        <span>14+<br></span>
+                        Partners
+                    </div>
+                    <div  id="detail">
+                        <span>55+<br></span>
+                        Projects Done
+                    </div>
+                    <div id="detail">
+                        <span>89+<br></span>
+                        Happy Clients
+                    </div>
+                    <div id="detail">
+                        <span>150+<br></span>
+                        Meetings
+                    </div>
+                </div>
+                <button>
+                    <i class="fa fa-download"></i> Download Resume
+                </button>
+                <h3 style="padding: 24px 0px">My Reputation</h3>
+                <img src="avatar_smoke.jpg" style="width:80px">
+                <p id="name-info">
+                    <span>
+                        Chandler Bing.
+                    </span> Web Designer.
+                </p>
+                <p style="color:#616161">Jane Doe is just awesome. I am so happy to have met her!</p>
+                <br>
+
+                <img src="bandmember.jpg" style="width:80px">
+                <p id="name-info">
+                    <span>
+                        Chris Fox.
+                    </span> CEO at Mighty Schools..
+                </p>
+                <p style="color:#616161">Jane Doe is just awesome. I am so happy to have met her!</p>
+                <br>
+
+                <img src="avatar_g2.jpg" style="width:80px">
+                <p id="name-info">
+                    <span>
+                        Rebecca Flex.
+                    </span> CEO at Company.
+                </p>
+                <p style="color:#616161">Jane Doe is just awesome. I am so happy to have met her!</p>
+                <br>
+                <h3 >My Price</h3>
+                <div id="prices-charts">
+                    <div id="chart">
+                        <ul>
+                            <li id="li1"  >Basic</li>
+                            <li >Web Design</li>
+                            <li >Photography</li>
+                            <li >5GB Storage</li>
+                            <li >Mail Support</li>
+                            <li>
+                                <h2>$ 10</h2>
+                                <span >per month</span>
+                            </li>
+                            <li >
+                                <button>Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="chart">
+                        <ul>
+                            <li id="li1" style="background-color: black;">Pro</li>
+                            <li >Web Design</li>
+                            <li >Photography</li>
+                            <li >50GB Storage</li>
+                            <li >Endless Support</li>
+                            <li>
+                                <h2>$ 25</h2>
+                                <span >per month</span>
+                            </li>
+                            <li >
+                                <button>Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact">
+                <h2>Contact Me</h2>
+                <hr style="border: .5px solid silver; margin: 20px 0px; opacity: .4; ">
+                <div id="contact-info">
+                    <p><i class="fa fa-map-marker fa-fw w3-xxlarge "></i> Chicago, US</p>
+                    <p><i class="fa fa-phone fa-fw w3-xxlarge"></i> Phone: +00 151515</p>
+                    <p><i class="fa fa-envelope fa-fw w3-xxlarge"> </i> Email: mail@mail.com</p>
+                </div>
+
+                <img src="map.jpg" class="grayscale" style="width:100%;margin:32px 0">
+                <p style="color:#888888;">Lets get in touch. Send me a message:</p>
+
+                <form>
+                    <p><input  type="text" placeholder="Name" required name="Name"></p>
+                    <p><input  type="text" placeholder="Email" required name="Email"></p>
+                    <p><input type="text" placeholder="Subject" required name="Subject"></p>
+                    <p><input  type="text" placeholder="Message" required name="Message"></p>
+                    <p>
+                      <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                      </button>
+                    </p>
+                  </form>
+            </div>
+        </div>
+        <footer>
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-pinterest"></ion-icon>
+            <ion-icon name="logo-snapchat"></ion-icon>
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+        </footer>
+    </body>
+</html>
